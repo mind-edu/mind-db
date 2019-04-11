@@ -1,7 +1,5 @@
 # 说明 
 
-一条命令直接就可以运行成功的
-
 Mac
 
 ```
@@ -10,6 +8,8 @@ docker run \
     --volume=$HOME/Desktop/neo4j/data:/data \
     neo4j
 ```
+
+data数据持久化的目录: ```/Desktop/neo4j/data``
 
 Ubuntu
 
