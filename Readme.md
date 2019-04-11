@@ -20,4 +20,9 @@ docker run \
     neo4j
 ```
 
+数据保存的路径：
+```
+/home/ubuntu/neo4j/data
+```
+
 [https://hub.docker.com/_/neo4j/](https://hub.docker.com/_/neo4j/)
