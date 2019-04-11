@@ -9,7 +9,7 @@ docker run \
     neo4j
 ```
 
-data数据持久化的目录: ```/Desktop/neo4j/data``
+data数据持久化的目录: ```/Desktop/neo4j/data```
 
 Ubuntu
 
@@ -26,9 +26,15 @@ docker run \
     neo4j:latest
 ```
 
-数据保存的路径：
+数据持久化的路径 :
+
+
 ```
-/root/neo4j/data
+# 说明，echo $HOME 输出， root
+# 数据路径
+/root/neo4j/
 ```
 
-[https://hub.docker.com/_/neo4j/](https://hub.docker.com/_/neo4j/)
+参考资料 :
+
+[https://neo4j.com/developer/docker-run-neo4j/](https://neo4j.com/developer/docker-run-neo4j/)
