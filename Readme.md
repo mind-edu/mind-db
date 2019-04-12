@@ -26,6 +26,8 @@ docker run \
     neo4j:latest
 ```
 
+注意 : 这里的登录密码已经定义好是test
+
 数据持久化的路径 :
 
 
