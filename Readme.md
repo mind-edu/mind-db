@@ -17,7 +17,7 @@ docker run \
 
 data数据持久化的目录: ```$PWD/neo4j/data```
 
-在浏览器上打开```localhost:7474```，用户名为 neo4j，密码为 test
+在浏览器上打开```http://0.0.0.0:7474```，用户名为 neo4j，密码为 test，登陆
 
 
 
