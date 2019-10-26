@@ -1,41 +1,25 @@
 # 说明 
 
-Mac
-
-```
-docker run \
-    --publish=7474:7474 --publish=7687:7687 \
-    --volume=$HOME/Desktop/neo4j/data:/data \
-    neo4j
-```
-
-data数据持久化的目录: ```/Desktop/neo4j/data```
-
-Ubuntu
+在Linux系统，$PWD表示当前目录路径
 
 ```
 docker run \
     --name testneo4j \
     -p7474:7474 -p7687:7687 \
     -d \
-    -v $HOME/neo4j/data:/data \
-    -v $HOME/neo4j/logs:/logs \
-    -v $HOME/neo4j/import:/var/lib/neo4j/import \
-    -v $HOME/neo4j/plugins:/plugins \
+    -v $PWD/neo4j/data:/data \
+    -v $PWD/neo4j/logs:/logs \
+    -v $PWD/neo4j/import:/var/lib/neo4j/import \
+    -v $PWD/neo4j/plugins:/plugins \
     --env NEO4J_AUTH=neo4j/test \
     neo4j:latest
 ```
 
-注意 : 这里的登录密码已经定义好是test
+data数据持久化的目录: ```$PWD/neo4j/data```
 
-数据持久化的路径 :
+在浏览器上打开```localhost:7474```，用户名为 neo4j，密码为 test
 
 
-```
-# 说明，echo $HOME 输出， root
-# 数据路径
-/root/neo4j/
-```
 
 参考资料 :
 
